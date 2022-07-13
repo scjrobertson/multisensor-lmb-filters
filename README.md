@@ -12,7 +12,7 @@ This code runs in Matlab R2022a and requires the **Statistics and Machine Learni
 The script **runFilters.m** runs the single-sensor LMB and LMBM filters and plots their results and Euclidean and Hellinger optimal subpattern assignment (OSPA) errors.
 The LMB filter can be run using the following three data association algorithms:
 
-   1. Loopy belief propagation (LBP). This is Williams et al.'s LBP algorithm to approximate each object's posterior existence probability and marginal association probabilities. We recommend this data association algorithm, as it computationally inexpensive and it is more accurate than the other two data association algorithms.
+   1. Loopy belief propagation (LBP). This is Williams et al.'s LBP algorithm that approximate each object's posterior existence probability and marginal association probabilities. We recommend this data association algorithm, as it computationally inexpensive and it is more accurate than the other two data association algorithms.
    2. Gibbs sampling. This uses a relatively inexpensive Gibbs sampling routine to approximate each object's posterior existence probability and marginal association probabilities.
    3. Murty's algorithm. This uses Vo and Vo's **.mex** implementation of Murty's algorithm to approximate each object's posterior existence probability and marginal association probabilities.
 
