@@ -14,7 +14,7 @@ The LMB filter can be run using the following three data association algorithms:
 
    1. Loopy belief propagation (LBP). This is Williams et al.'s LBP algorithm to approximate each object's posterior existence probability and marginal association probabilities. We recommend this data association algorithm, as it computationally inexpensive and it is more accurate than the other two data association algorithms.
    2. Gibbs sampling. This uses a relatively inexpensive Gibbs sampling routine to approximate each object's posterior existence probability and marginal association probabilities.
-   3. Murty's algorithm. This uses Vo and Vo's **.mex** implementation of Murty's algorithm to approximate each object's posterior existence probability and marginal association probabilities. This code may have a memory leak, and it might deplete your PC's memory when left running for a long time. 
+   3. Murty's algorithm. This uses Vo and Vo's **.mex** implementation of Murty's algorithm to approximate each object's posterior existence probability and marginal association probabilities.
 
 All of the single-sensor LMB filters approximate each object's spatial distribution using a Gaussian mixture (GM), and the filters' parameters can be set in the script **common/generateModel.m**.
 The LMBM filter can be implemented using both the Gibbs sampler and Murty's algorithm.
