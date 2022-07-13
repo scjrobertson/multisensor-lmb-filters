@@ -30,7 +30,7 @@ We have developed the following three approximate multi-sensor LMB filters:
   3. The arithmetic average LMB (AA-LMB) filter. This filter is based of arithmetic average (AA) fusion, and it approximates the multi-sensor multi-object Bayes filter's posterior distribution using the weighted AA of each sensor's measurement-updated distribution. This filter does not assume the sensors are independent, and it provides the worst results of all our filters for independent sensors. However, its cardinality estimate is superior to the GA-LMB filter's.
 
 The three multi-sensor LMB filters listed above all split the multi-sensor measurement update into independent single-sensor measurement updates, before combining the resulting measurement-updated distributions together.
-Their measurement updates can be computed in parallel signifcantly reducing their computational cost.
+Their measurement updates can be computed in parallel significantly reducing their computational cost.
 However, in these implementations, the filters' measurements updates are not computed in parallel, and the **Parallel Computing Toolbox** is not required.
 Only the AA-LMB filter propagates GMs, the PU- and GA-LMB filters assume an object's prior spatial distribution is Gaussian and approximates each object's posterior spatial distribution as Gaussian.
 It is also possible to implement all three filters using a Gibbs sampler or Murty's algorithm.
