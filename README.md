@@ -42,7 +42,7 @@ This filter represents an exact closed-form solution to the multi-sensor multi-o
 It accounts for a variable number of sensors; however, it is prohibitively expensive.
 If you track a large number of objects using many sensors, then you will exceed Matlab's memory limit.
 
-All of the multi-sensor filters parameters are set in the script **common/generateMultisensorModel.m**.
+All of the multi-sensor filters' parameters are set in the script **common/generateMultisensorModel.m**.
 
 ## Other things
 
