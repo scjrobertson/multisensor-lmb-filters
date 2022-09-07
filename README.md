@@ -9,7 +9,7 @@ This code runs in Matlab R2022a and requires the **Statistics and Machine Learni
 
 ## Single-sensor LMB and LMBM filters
 
-The script **runFilters.m** runs the single-sensor LMB and LMBM filters and plots their results and Euclidean and Hellinger optimal subpattern assignment (OSPA) errors.
+The script **runFilters.m** runs the single-sensor LMB and LMBM filters and plots their results and Euclidean and Hellinger optimal subpattern assignment (OSPA) metrics.
 The LMB filter can be run using the following three data association algorithms:
 
    1. Loopy belief propagation (LBP). This is Williams et al.'s LBP algorithm that approximates each object's posterior existence probability and marginal association probabilities. We recommend this data association algorithm, as it is computationally inexpensive and it is more accurate than the other two data association algorithms.
@@ -22,7 +22,7 @@ However, it cannot be implemented using the LBP algorithm, as that algorithm can
 
 ## Multi-sensor LMB and LMBM filters
 
-The script **runMultisensorFilters.m** runs the multi-sensor LMB and LMBM filters and plots their results and Euclidean and Hellinger optimal subpattern assignment (OSPA) errors.
+The script **runMultisensorFilters.m** runs the multi-sensor LMB and LMBM filters and plots their results and Euclidean and Hellinger OSPA metrics.
 We have developed the following three approximate multi-sensor LMB filters:
 
   1. The parallel update LBM (PU-LMB) filter. This filter results from the mathematical manipulation of the multi-sensor multi-object Bayes filter's posterior distribution. This filter assumes that the sensors are independent, and it is the most accurate of our approximate multi-sensor LMB filters.
