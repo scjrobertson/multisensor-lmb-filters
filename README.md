@@ -3,8 +3,8 @@
 This repository contains Matlab implementations of various labelled multi-Bernoulli (LMB) and LMB mixture (LMBM) filters.
 The repository contains both single- and multi-sensor implementations of the LMB and LMBM filters. 
 These filters can be implemented using a variety of data association algorithms; however, all filters assume the linear-Gaussian dynamics.
-Hopefully, the code is documented well enough that it is easy to interpret. 
-You should be able to use Matlab's **help** function to access the scripts documentation.
+The code is hopefully documented well enough that it is easy to interpret. 
+You should be able to use Matlab's **help** function to access the scripts' documentation.
 This code runs in Matlab R2022a and requires the **Statistics and Machine Learning Toolbox**, but only to simulate Poisson distributed random variables.
 
 ## Single-sensor LMB and LMBM filters
