@@ -49,5 +49,6 @@ All of the multi-sensor filters' parameters are set in the script **common/gener
 We also have some additional scripts that allow us to compare and contrast both our data association algorithms and filters.
 The scripts are organised into the following two folders:
 
-   1. **marginalEvaluations/:** The scripts in this folder compare the LBP data association's approximate marginal distrubtions to those produced by Murty's algorithm and our Gibbs sampler. The Gibbs sampler is based on the same underlying model as the LBP algorithm.
-   2. **trials/:** The scripts in these folders compare the various single- and multi-sensor filters OSPA metrics and runtimes in various scenarios. 
+   1. **marginalEvaluations/:** The scripts in this folder compare the LBP data association's approximate marginal distrubtions to those produced by Murty's algorithm and our Gibbs sampler. 
+The Gibbs sampler is based on the same underlying model as the LBP algorithm.
+   2. **trials/:** The scripts in these folders compare the various single- and multi-sensor filters' OSPA metrics and runtimes in various scenarios. 
